@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Font-Awesome Icons Library -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CSS-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1>Forms</h1>
+
+    <div class="container m-auto p-2 w-50 border border-dark">
+      <form>
+        <div class="form-group">
+          <h2>
+            <u> Sign Up </u>
+          </h2>
+          <label for="name">Name</label>
+          <input
+            class="form-control"
+            type="text"
+            id="name"
+            placeholder="Enter Name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            class="form-control"
+            type="text"
+            id="email"
+            placeholder="Enter Email"
+          />
+          <small class="form-text text-muted">Email will not be shared</small>
+        </div>
+        <div class="form-group">
+          <label for="company">Company</label>
+          <input
+            class="form-control"
+            type="text"
+            id="company"
+            placeholder="Enter Company"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            class="form-control"
+            type="text"
+            id="password"
+            placeholder="Enter Password"
+          />
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <select class="form-control" name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            class="form-control"
+            name="message"
+            id="message"
+            cols="30"
+            rows="3"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="file">File Input</label>
+          <input class="form-control" type="file" id="file" />
+          <small id="fileHelp">Max 3MB</small>
+        </div>
+        <div class="form-group">
+          <label for="membership">Membership Level</label>
+          <input
+            class="custom-range"
+            min="1"
+            max="5"
+            step="1"
+            value="1"
+            type="range"
+          />
+        </div>
+        <button class="btn btn-primary btn-block" type="submit">Submit</button>
+      </form>
+    </div>
+    <br /><br />
+
+    <div class="container">
+      <form action="" class="form-inline">
+        <input type="text" class="form-control mr-2" placeholder="UserName" />
+        <input type="text" class="form-control mr-2" placeholder="Password" />
+        <button class="btn btn-light" type="submit">Submit</button>
+      </form>
+    </div>
+
+    <br /><br />
+
+    <div class="container mb-5">
+      <form action="">
+        <div class="form-row">
+          <div class="col">
+            <label for="firstname">First Name</label>
+          </div>
+          <div class="col">
+            <input
+              id="firstname"
+              type="text"
+              class="form-control"
+              placeholder="First Name"
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <label for="firstname">Last Name</label>
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last Name" />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="container mx-5">
+      <div class="form-group">
+        <label for="username">UserName</label>
+        <input type="text" class="form-control is-valid" id="username" />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="text" class="form-control" id="password" />
+        <div class="invalid-feedback">Password Not Strong Enough</div>
+      </div>
+    </div>
+
+    <!--
+
+
+
+
+
+
+
+
+
+
+
+      
+-->
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <!-- popper Bootstrap dropdown require Popper. js (https://popper.js.org) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
